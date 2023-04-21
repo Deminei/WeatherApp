@@ -1,0 +1,156 @@
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,800);
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  -webkit-animation: color-change-4x 8s linear infinite alternate both;
+  animation: color-change-4x 8s linear infinite alternate both;
+}
+@-webkit-keyframes color-change-4x {
+  0% {
+    background: #4cbbb6;
+  }
+  33.3333% {
+    background: #6dd9bd;
+  }
+  66.666% {
+    background: #e1ffbd;
+  }
+  100% {
+    background: #ffe280;
+  }
+}
+@keyframes color-change-4x {
+  0% {
+    background: #4cbbb6;
+  }
+  33.3333% {
+    background: #6dd9bd;
+  }
+  66.666% {
+    background: #e1ffbd;
+  }
+  100% {
+    background: #ffe280;
+  }
+}
+
+.header {
+  text-align: center;
+  font-size: 46px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 0 #333, -1px -1px 0 #333, 1px -1px 0 #333,
+    -1px 1px 0 #333, 2px 2px 5px rgba(0, 0, 0, 0.65);
+}
+
+.weather-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.weather-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #a9ddf3;
+}
+
+.card {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.card-header {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.card-body#currentDate {
+  font-weight: bold;
+  color: #3498db;
+}
+
+.card-body#city {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-body#currentTemp {
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: #d3d3d3;
+}
+
+.card-body#currentConditions {
+  font-size: 16px;
+  color: #777;
+}
+
+.card-body#tempHiLo {
+  font-size: 14px;
+  color: #777;
+  margin-top: -10px;
+}
+
+@media (max-width: 767px) {
+  .weather-form {
+    padding: 10px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .card-header {
+    font-size: 20px;
+  }
+
+  .card-body {
+    font-size: 14px;
+  }
+}
